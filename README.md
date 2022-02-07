@@ -1,2 +1,2 @@
 # Ashwin1234-Leetcode-Premium-Solutions
-Collection of LeetCode questions to ace the coding interview! - Created using [LeetHub](https://github.com/QasimWani/LeetHub)
+Solutions of the most frequently asked leetcode questions in top N companies.
