@@ -1,17 +1,14 @@
 class Solution:
     def shortestDistance(self, wordsDict: List[str], word1: str, word2: str) -> int:
-        left = -1
-        right = -1
-        dist = float('inf')
+        index1 = -1
+        index2 = -1
+        minDist = float('inf')
         for i in range(0,len(wordsDict)):
             if wordsDict[i] == word1:
-                left = i
+                index1 = i
             if wordsDict[i] == word2:
-                right = i
-            if left > -1 and right > -1:
-                dist = min(dist, abs(left - right))
-        return dist
-                
-            
-                
+                index2 = i
+            if abs(index1 - index2) < minDist and (index1>=0 and index2>=0):
+                minDist = abs(index1 - index2)
+        return minDist
         
