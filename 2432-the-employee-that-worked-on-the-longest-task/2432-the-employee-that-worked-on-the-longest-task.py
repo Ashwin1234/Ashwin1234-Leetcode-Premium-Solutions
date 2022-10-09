@@ -14,4 +14,3 @@ class Solution:
                 output.append((ele[0], ele[1]))
         output = sorted(output, key = lambda x: x[0])
         return output[0][0]
-        return 1
