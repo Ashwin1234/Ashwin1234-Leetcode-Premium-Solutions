@@ -7,7 +7,6 @@ class Solution:
             if int(math.sqrt(i)) * int(math.sqrt(i)) == i:
                 squares.add(i)
         squares.pop()
-        print(squares)
         if n in squares:
             return 1
         for ele in squares:
